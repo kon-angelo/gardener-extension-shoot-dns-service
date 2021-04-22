@@ -13,7 +13,6 @@ spec:
     - >-
       go test -timeout=0 -mod=vendor ./test/system
       --v -ginkgo.v -ginkgo.progress -ginkgo.noColor
-      --report-file=$TM_EXPORT_PATH/report.json
       -seed-kubecfg-path=$TM_KUBECONFIG_PATH/seed.config
       -shoot-kubecfg-path=$TM_KUBECONFIG_PATH/shoot.config
       -shoot-name=$SHOOT_NAME
